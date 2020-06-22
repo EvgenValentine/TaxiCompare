@@ -1,13 +1,23 @@
 package com.company;
-
+/*
+ * Classname : TaxiPerHour
+ * Description : Class witch contains info about taxi per hour
+ *
+ * @version 1.0 2020.06.22
+ * @author Khnyznytskyj Evgen
+ *
+ * laboratory work. Variant 9
+ *
+ * Taxi: payment for km and for time.
+ */
 import java.util.Objects;
 
 public class TaxiPerHour implements ITaxi{
     private String driverName;
     private String carNumber;
-    private String contact;
+    private String contact;         //drivers contact
     private double pricePerHour;
-    private double hours;
+    private double hours;           //per month
 
     public TaxiPerHour(String driverName, String carNumber, String contact, double pricePerHour, double hours) {
         this.driverName = driverName;

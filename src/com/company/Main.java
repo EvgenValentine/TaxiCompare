@@ -1,5 +1,15 @@
 package com.company;
-
+/*
+ * Classname : Main
+ * Description : The Main class
+ *
+ * @version 1.0 2020.06.22
+ * @author Khnyznytskyj Evgen
+ *
+ * laboratory work. Variant 9
+ *
+ * Taxi: payment for km and for time.
+*/
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
