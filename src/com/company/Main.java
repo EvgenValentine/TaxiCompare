@@ -62,24 +62,24 @@ public class Main {
         double allSalary = listOfTaxiDrivers.stream()
                 .mapToDouble(ITaxi::getPaymentAmount)
                 .sum();
-        System.out.println("Всі таксисти за місяць заробили - " + allSalary);
+        System.out.println("Всі таксисти за місяць заробили - " + allSalary + "грн");
 
         //What is the biggest salary?
         ITaxi maxSalary = listOfTaxiDrivers.stream()
                 .max(Comparator.comparingDouble(ITaxi::getPaymentAmount))
                 .orElse(null);
-        System.out.println("Найбільший заробіток - " + maxSalary.getPaymentAmount());
+        System.out.println("Найбільший заробіток - " + maxSalary.getPaymentAmount() + "грн");
 
         //What is the lesser salary?
         ITaxi minSalary = listOfTaxiDrivers.stream()
                 .min(Comparator.comparingDouble(ITaxi::getPaymentAmount))
                 .orElse(null);
-        System.out.println("Найменший заробіток - " + minSalary.getPaymentAmount());
+        System.out.println("Найменший заробіток - " + minSalary.getPaymentAmount() + "грн");
 
         //average salary
         double averageSalary = listOfTaxiDrivers.stream().mapToDouble(ITaxi::getPaymentAmount)
                 .average().orElse(0);
-        System.out.println("Середній заробіток - " + minSalary.getPaymentAmount());
+        System.out.println("Середній заробіток - " + averageSalary + "грн");
 
         //compare two types of taxi
         double allSalaryPerHour = listOfTaxiDriversPerHour.stream()
