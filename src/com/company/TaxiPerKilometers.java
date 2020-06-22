@@ -15,9 +15,9 @@ import java.util.Objects;
 public class TaxiPerKilometers implements ITaxi{
     private String driverName;
     private String carNumber;
-    private String contact;
+    private String contact;             //drivers contact
     private double pricePerKilometer;
-    private double kilometers;
+    private double kilometers;          //per month
 
     public TaxiPerKilometers(String driverName, String carNumber, String contact, double pricePerKilometer, double kilometers) {
         this.driverName = driverName;

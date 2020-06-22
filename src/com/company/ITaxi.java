@@ -1,7 +1,7 @@
 package com.company;
 /*
  * Classname : TaxiPerKilometers
- * Description : Class witch contains info about taxi per kilometers
+ * Description : Interface for taxi's classes
  *
  * @version 1.0 2020.06.22
  * @author Khnyznytskyj Evgen

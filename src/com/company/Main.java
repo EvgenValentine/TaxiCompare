@@ -17,8 +17,8 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
+        //adding taxi drivers per hours
         List<TaxiPerHour> listOfTaxiDriversPerHour = new ArrayList<>();
-        //adding taxi drivers
         listOfTaxiDriversPerHour.add(
                 new TaxiPerHour("Jora", "1", "+380663253387", 35 , 250));
         listOfTaxiDriversPerHour.add(new TaxiPerHour(
@@ -29,6 +29,8 @@ public class Main {
                 "Nikolai", "4", "+380663253390", 30,312 ));
         listOfTaxiDriversPerHour.add(new TaxiPerHour(
                 "Andrew", "5", "+380663253391", 48, 300 ));
+
+        //adding taxi drivers per kilometers
         List<TaxiPerKilometers>  listOfTaxiDriversPerKilometers = new ArrayList<>();
         listOfTaxiDriversPerKilometers.add(new TaxiPerKilometers(
                 "Cetherine", "6", "+380663253392", 8 , 1200));
